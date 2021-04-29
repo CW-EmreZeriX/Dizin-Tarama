@@ -17,7 +17,7 @@ if(a=='1'):
         print('Dirsearch İle Devam Ediliyor!')
         b = input('Hedef Site:')
         c = input('Taram istediğiniz Uzantı Türü:')
-        os.system('python3 dirsearch -u {0} -e {1}').format(b,c)
+        os.system('python3 dirsearch -u {0} -e {1}'.format(b,c))
     if(q=='h'):
         print('Dirsearch kuruluyor...')
         os.system('git clone https://github.com/maurosoria/dirsearch')
@@ -32,7 +32,9 @@ if(a=='1'):
         if(ö=='h'):
             breakpoint
         else:
-            print('e yada h yazman gerek!')         
+            print('e yada h yazman gerek!')
+    else:
+        print('e yada h yazman gerek')
 if(a=='2'):
     print('Dirb Aracı ile devam ediliyor...')
     d = input('Hedef site:')
